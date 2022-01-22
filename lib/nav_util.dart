@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nextflow_flutter_sidemenu_showdown/features/login_page.dart';
 
 import 'features/auction_detail_page.dart';
 import 'features/auction_page.dart';
@@ -16,6 +17,7 @@ class NavUtil {
 
   static Map<String, Widget Function(BuildContext)> routeMap = {
     NavUtil.home: (context) => HomePage(),
+    NavUtil.login: (context) => LoginPage(),
     NavUtil.register: (context) => RegisterPage(),
     NavUtil.registerConfirmation: (context) => RegisterConfirmPage(),
     NavUtil.auction: (context) => AuctionPage(),
