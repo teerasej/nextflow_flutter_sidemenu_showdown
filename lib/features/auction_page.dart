@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nextflow_flutter_sidemenu_showdown/nav_util.dart';
 
 import '../main_drawer.dart';
 
@@ -17,7 +18,7 @@ class AuctionPage extends StatelessWidget {
         child: ElevatedButton(
           child: Text('detail'),
           onPressed: () {
-            Navigator.pushNamed(context, 'auction/detail');
+            Navigator.pushNamed(context, NavUtil.auctionDetail);
           },
         ),
       ),

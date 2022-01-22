@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nextflow_flutter_sidemenu_showdown/nav_util.dart';
 
 import '../main_drawer.dart';
 
@@ -10,14 +11,14 @@ class RegisterPage extends StatelessWidget {
     return Scaffold(
       drawer: MainDrawer(),
       appBar: AppBar(
-        title: Text('Auction Page'),
+        title: Text('Register Page'),
       ),
       body: Padding(
         padding: EdgeInsets.all(10),
         child: ElevatedButton(
-          child: Text('sign up'),
+          child: Text('Confirm'),
           onPressed: () {
-            Navigator.pushNamed(context, 'register/comfirmation');
+            Navigator.pushNamed(context, NavUtil.registerConfirmation);
           },
         ),
       ),
